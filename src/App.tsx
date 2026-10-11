@@ -188,10 +188,6 @@ function App() {
       setFormMessage('Please enter a valid email address.');
       return;
     }
-    if (!emailJsServiceId || !emailJsTemplateId || !emailJsPublicKey) {
-      setFormMessage('EmailJS is not configured yet. Add the service ID, template ID, and public key in .env.');
-      return;
-    }
 
     setIsSubmitting(true);
     try {
@@ -574,4 +570,5 @@ function App() {
 }
 
 export default App;
+
 
