@@ -18,9 +18,9 @@ import {
   X,
 } from 'lucide-react';
 
-const emailJsServiceId = import.meta.env.VITE_EMAILJS_SERVICE_ID as string | undefined;
-const emailJsTemplateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID as string | undefined;
-const emailJsPublicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY as string | undefined;
+const emailJsServiceId = (import.meta.env.VITE_EMAILJS_SERVICE_ID as string | undefined) || 'service_r66f0jy';
+const emailJsTemplateId = (import.meta.env.VITE_EMAILJS_TEMPLATE_ID as string | undefined) || 'template_ygi3m1q';
+const emailJsPublicKey = (import.meta.env.VITE_EMAILJS_PUBLIC_KEY as string | undefined) || 'wPbfuSjkoq6P08mKp';
 const mapsUrl = 'https://maps.app.goo.gl/wWCE7VveeoUJ8Q3LA';
 const mapEmbedUrl =
   'https://maps.google.com/maps?q=New%20Harjinder%20Halftone%20Company%2C%20Ludhiana%2C%20Punjab%2C%20India&z=15&output=embed';
@@ -574,3 +574,4 @@ function App() {
 }
 
 export default App;
+
